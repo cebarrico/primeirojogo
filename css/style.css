@@ -1,84 +1,77 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .game-board {
-    width: 100%;
-    height: 500px;
-    border-bottom: 30px solid rgb(5, 133, 15);
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-    background: linear-gradient( rgb(93, 174, 211),#fff);
+  width: 100%;
+  height: 500px;
+  border-bottom: 30px solid rgb(5, 133, 15);
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  background: linear-gradient(rgb(93, 174, 211), #fff);
 }
 
 .pipe {
-    position: absolute;
-    bottom: 0;
-    width: 80px;
-    
-        animation: pipe-animation 1.5s infinite linear;
+  position: absolute;
+  bottom: 0;
+  width: 80px;
 
+  animation: pipe-animation 1.5s infinite linear;
 }
 
 @keyframes pipe-animation {
-    from { right: -80px;
+  from {
+    right: -80px;
+  }
 
-    }
-
-    to {
-        right: 100%;
-
-    }
+  to {
+    right: 100%;
+  }
 }
 
 .mario {
-    width: 150px;
-    position: absolute;
-    bottom: 0;
+  width: 150px;
+  position: absolute;
+  bottom: 0;
 }
 
 .jump {
-
-    animation: jump 500ms ease-out;
-
+  animation: jump 500ms ease-out;
 }
 
 @keyframes jump {
-
-    0% {
-        bottom: 0;
-    }
-    40% {
-        bottom: 180px;
-    }
-    50% {
-        bottom: 180px;
-    }
-    60% {
-        bottom: 180px;
-    }
-    100% {
-        bottom: 0;
-    }
+  0% {
+    bottom: 0;
+  }
+  40% {
+    bottom: 180px;
+  }
+  50% {
+    bottom: 180px;
+  }
+  60% {
+    bottom: 180px;
+  }
+  100% {
+    bottom: 0;
+  }
 }
- 
+
 .clouds {
-    width: 500px;
-    position: absolute;
-    animation: clouds-animation 15s infinite linear;
+  width: 500px;
+  position: absolute;
+  animation: clouds-animation 15s infinite linear;
 }
 
 @keyframes clouds-animation {
+  from {
+    right: -500px;
+  }
 
-    from {
-        right: -500px;
-
-        }
-        
-        to {
-            right: 100%;
-        }
+  to {
+    right: 100%;
+  }
 }
