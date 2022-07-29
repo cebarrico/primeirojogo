@@ -75,3 +75,11 @@
     right: 100%;
   }
 }
+p {
+  flex-direction: column;
+  font-size: 50px;
+  margin-left: 300px;
+  align-content: center;
+  font-family: fantasy;
+  color: brown;
+}
